@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Main braing games module."""
+"""Calculator script."""
 from brain_games.cli import welcome_user
 from brain_games.game_logic import game_loop, make_calculate_question
 

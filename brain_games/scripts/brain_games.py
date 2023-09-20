@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Main braing games module."""
+"""Greetings script."""
 from brain_games.cli import welcome_user
 
 

@@ -17,16 +17,16 @@ def is_answer_correct(user_answer, correct_answer):
 
 
 def make_calculate_question():
-    first_random_digit = random.randint(1, 100)
-    second_random_digit = random.randint(1, 100)
+    first_digit = random.randint(1, 100)
+    second_digit = random.randint(1, 100)
     operation = random.choice(['+', '-', '*'])
     if operation == '+':
-        answer = first_random_digit + second_random_digit
+        answer = first_digit + second_digit
     elif operation == '-':
-        answer = first_random_digit - second_random_digit
+        answer = first_digit - second_digit
     else:
-        answer = first_random_digit * second_random_digit
-    question = f"{first_random_digit} {operation} {second_random_digit}"
+        answer = first_digit * second_digit
+    question = f"{first_digit} {operation} {second_digit}"
     return question, answer
 
 
@@ -35,6 +35,24 @@ def make_even_question():
     is_even = random_digit % 2 == 0
     answer = 'yes' if is_even else 'no'
     return random_digit, answer
+
+
+def find_gcd(min_digit, max_digit):
+    for digit in range(min_digit, 0, -1):
+        if min_digit % digit == 0 and max_digit % digit == 0:
+            return digit
+
+
+def make_gcd_question():
+    first_digit = random.randint(1, 10)
+    second_digit = random.randint(1, 10)
+    if first_digit > second_digit:
+        gcd_digit = find_gcd(first_digit, second_digit)
+    elif second_digit > first_digit:
+        gcd_digit = find_gcd(second_digit, first_digit)
+    else:
+        gcd_digit = first_digit
+    return f"{first_digit} {second_digit}", gcd_digit
 
 
 def game_loop(make_question, name):
