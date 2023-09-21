@@ -5,7 +5,7 @@ MAX_PRIME_DIGIT = 100
 
 
 def make_prime_question():
-
+    """Create prime digit question."""
     random_digit = random.randint(1, MAX_PRIME_DIGIT)
     is_prime = True
     for digit in range(2, random_digit):
