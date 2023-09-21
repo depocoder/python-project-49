@@ -10,4 +10,4 @@
 
 ## Brain calculator
 
-[![asciicast](https://asciinema.org/a/DQkmQDwyByelZ5HRmbuDor3Nv.svg)](https://asciinema.org/a/DQkmQDwyByelZ5HRmbuDor3Nv)
+[![asciicast](https://asciinema.org/a/L7u2KS1PzwFU2jFqny6dIpFnG.svg)](https://asciinema.org/a/L7u2KS1PzwFU2jFqny6dIpFnG)
