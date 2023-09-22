@@ -7,7 +7,6 @@ from brain_games.games.calc import make_calculate_question
 
 def main():
     """Cli caclulator game."""
-    print("Welcome to the Brain Games")
     name = welcome_user()
     print("What is the result of the expression?")
     game_loop(make_calculate_question, name)
