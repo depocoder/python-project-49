@@ -4,10 +4,52 @@
 
 # Brain games
 
-## Brain is even
+This project using the terminal helps you to play brain games
 
-[![asciicast](https://asciinema.org/a/diWzCSgd57HAkhHyedHudofAx.svg)](https://asciinema.org/a/diWzCSgd57HAkhHyedHudofAx)
+|       Game        |                      Goal                     |
+|-------------------|-----------------------------------------------|
+|`brain-even   `    | answer whether number is even or not          |       
+|`brain-calc`       | execute some simple math operations: +, - or *|      
+|`brain-gcd`        | find greatest common divisor for two numbers  |
+|`brain-prime`      | answer whether number is prime or not         |
+|`brain-progression`| guess hidden element of arithmetic progression| 
 
-## Brain calculator
+## Quickstart
 
-[![asciicast](https://asciinema.org/a/L7u2KS1PzwFU2jFqny6dIpFnG.svg)](https://asciinema.org/a/L7u2KS1PzwFU2jFqny6dIpFnG)
+```
+pip install git+https://github.com/depocoder/python-project-49.git
+```
+
+## Running
+
+This programm supports five scripts to play a certain game:
+```bash
+brain-prime
+brain-even
+brain-calc
+brain-gcd
+brain-progression
+```
+You can also use `brain-games` to only see the greeting.
+
+## Usage example
+
+### Brain is even
+
+[![asciicast](https://asciinema.org/a/KgcSQIRTEibwtsw6jgreXuxks.svg)](https://asciinema.org/a/KgcSQIRTEibwtsw6jgreXuxks)
+
+### Brain prime
+
+[![asciicast](https://asciinema.org/a/m2ZDU8RrMigir8G7rqOe1oSfu.svg)](https://asciinema.org/a/m2ZDU8RrMigir8G7rqOe1oSfu)
+
+### Brain calc
+
+[![asciicast](https://asciinema.org/a/wClJf3AuBmpQmzf5OAJRHKMs2.svg)](https://asciinema.org/a/wClJf3AuBmpQmzf5OAJRHKMs2)
+
+### Brain GCD
+
+[![asciicast](https://asciinema.org/a/LsDRFLhE5RRF9gnlyYDTAERDr.svg)](https://asciinema.org/a/LsDRFLhE5RRF9gnlyYDTAERDr)
+
+### Brain progression
+
+[![asciicast](https://asciinema.org/a/Wo3AhN1tNJM1QTg9mrfEAihOQ.svg)](https://asciinema.org/a/Wo3AhN1tNJM1QTg9mrfEAihOQ)
