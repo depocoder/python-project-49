@@ -13,7 +13,7 @@ def game_loop(make_question, name):
         name: name of user
     """
     consecutive_wins = 0
-    while consecutive_wins != WINS_TO_END:
+    for _ in range(0, WINS_TO_END):
         question, answer = make_question()
         print(f"Question: {question}")
         user_answer = prompt.string('Your answer: ').lower()
@@ -26,6 +26,6 @@ def game_loop(make_question, name):
             f"Correct answer was '{answer}'.",
         )
         print(f"Let's try again, {name}!")
-        consecutive_wins = 0
+        return
 
     print(f"Congratulations, {name}!")
