@@ -6,8 +6,14 @@ authors = ["Ivan Popov <ma1n.py@ya.ru>"]
 readme = "README.md"
 repository = "https://github.com/depocoder/python-project-49"
 packages = [
-  { include = "brain_games" },
+    { include = "brain_games" },
 ]
+classifiers = [
+    "Framework :: Flake8",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3.11",
+]
+
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
