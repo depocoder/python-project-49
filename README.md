@@ -6,13 +6,13 @@
 
 This project using the terminal helps you to play brain games
 
-|       Game        |                      Goal                     |
-|-------------------|-----------------------------------------------|
-|`brain-even   `    | answer whether number is even or not          |       
-|`brain-calc`       | execute some simple math operations: +, - or *|      
-|`brain-gcd`        | find greatest common divisor for two numbers  |
-|`brain-prime`      | answer whether number is prime or not         |
-|`brain-progression`| guess hidden element of arithmetic progression| 
+| Game                |                      Goal                     |
+|---------------------|-----------------------------------------------|
+| `brain-even`        | answer whether number is even or not          |       
+| `brain-calc`        | execute some simple math operations: +, - or *|      
+| `brain-gcd`         | find greatest common divisor for two numbers  |
+| `brain-prime`       | answer whether number is prime or not         |
+| `brain-progression` | guess hidden element of arithmetic progression| 
 
 ## Quickstart
 
