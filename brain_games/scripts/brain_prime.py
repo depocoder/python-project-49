@@ -8,7 +8,7 @@ from brain_games.games.prime import make_prime_question
 def main():
     """Cli prime game."""
     name = welcome_user()
-    print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
+    print("Answer \"yes\" if the number is prime, otherwise answer \"no\".")
     game_loop(make_prime_question, name)
 
 
