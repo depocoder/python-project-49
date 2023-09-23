@@ -1,18 +1,28 @@
 """Prime main game logic."""
 import random
+from typing import Tuple
 
-MAX_PRIME_DIGIT = 100
+MAX_PRIME_NUMBER = 100
 
 
-def make_prime_question():
-    """Create prime digit question."""
-    random_digit = random.randint(0, MAX_PRIME_DIGIT)
+def is_prime_number(number) -> bool:
+    """Check if number is prime.
+
+    Args:
+        number: number which we need to check
+    """
     is_prime = True
-    if random_digit < 2:
+    if number < 2:
         is_prime = False
-    for digit in range(2, random_digit):
-        if random_digit % digit == 0:
+    for loop_number in range(2, number):
+        if number % loop_number == 0:
             is_prime = False
             break
-    answer = 'yes' if is_prime else 'no'
-    return random_digit, answer
+    return is_prime
+
+
+def make_prime_question() -> Tuple[str, str]:
+    """Create prime number question."""
+    random_number = random.randint(0, MAX_PRIME_NUMBER)
+    answer = 'yes' if is_prime_number(random_number) else 'no'
+    return str(random_number), answer

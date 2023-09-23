@@ -18,7 +18,7 @@ def find_gcd(min_digit: int, max_digit: int):
             return digit
 
 
-def make_gcd_question() -> Tuple[str, int]:
+def make_gcd_question() -> Tuple[str, str]:
     """Create the greatest common divisor question."""
     first_digit = random.randint(1, MAX_GCD_FIRST_DIGIT)
     second_digit = random.randint(1, MAX_GCD_SECOND_DIGIT)
@@ -28,4 +28,4 @@ def make_gcd_question() -> Tuple[str, int]:
         gcd_digit = find_gcd(second_digit, first_digit)
     else:
         gcd_digit = first_digit
-    return f"{first_digit} {second_digit}", gcd_digit
+    return f"{first_digit} {second_digit}", str(gcd_digit)

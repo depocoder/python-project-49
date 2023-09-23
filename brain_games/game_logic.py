@@ -16,7 +16,7 @@ def game_loop(make_question, name):
         question, answer = make_question()
         print(f"Question: {question}")
         user_answer = prompt.string('Your answer: ').lower()
-        if user_answer != str(answer):
+        if user_answer != answer:
             print(
                 f"'{user_answer}' is wrong answer ;(. "
                 f"Correct answer was '{answer}'.",
