@@ -19,7 +19,6 @@ def game_loop(make_question, name):
         user_answer = prompt.string('Your answer: ').lower()
         if user_answer == str(answer):
             print("Correct")
-            consecutive_wins += 1
             continue
         print(
             f"'{user_answer}' is wrong answer ;(. "
