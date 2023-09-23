@@ -14,7 +14,9 @@ def make_calculate_question():
         answer = first_digit + second_digit
     elif operation == '-':
         answer = first_digit - second_digit
-    else:
+    elif operation == '*':
         answer = first_digit * second_digit
+    else:
+        raise ValueError("Can't find operator")
     question = f"{first_digit} {operation} {second_digit}"
     return question, answer
